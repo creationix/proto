@@ -11,7 +11,7 @@ All functions added to `Object.prototype` are usable from any object in JavaScri
 This is the most useful of the additions.  It allows you to forEach over an `Object` instance's local properties and values just like you can already do with `Array` instances.
 
     require('proto');
-    {name: "Tim", age: 28}.forEach(function (value, key) {
+    ({name: "Tim", age: 28}).forEach(function (value, key) {
       sys.puts(key + " = " + JSON.stringify(value));
     });
 
@@ -20,7 +20,7 @@ This is the most useful of the additions.  It allows you to forEach over an `Obj
 This works like forEach, except returns an `Array` instance with the returned values of the function calls.
 
     require('proto');
-    var pairs = {name: "Tim", age: 28}.map(function (value, key) {
+    var pairs = ({name: "Tim", age: 28}).map(function (value, key) {
       return key + " = " + value;
     });
     // pairs is ["name = Tim", "age = 28"]
