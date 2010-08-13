@@ -1,6 +1,6 @@
 # Proto
 
-This simple js library adds three functions to Object.prototype and one to Function.prototype that are commonly used.  Since this only modifies global objects and doesn't export any structures, you don't need the return value when calling `require('proto')`.
+This simple js library adds four functions to Object.prototype.  Since this only modifies global objects and doesn't export any structures, you don't need the return value when calling `require('proto')`.
 
 ## Object.prototype
 
